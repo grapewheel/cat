@@ -1,5 +1,6 @@
 import Nerv from "nervjs";
-import { Text, Button } from "./framework";
+import { Button } from "@alifd/next";
+import { Text } from "./framework";
 
 export default class extends Nerv.Component {
   #Text = {
