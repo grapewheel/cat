@@ -1,7 +1,13 @@
 const es = require('esbuild')
 const { basename, extname } = require('path')
+const alias = require('module-alias')
 
 const ENTRY_FILE = './src/app.jsx'
+
+alias.addAliases({
+    'react': 'nervjs',
+    'react-dom': 'nervjs'
+})
 
 let isDev = true
 if (process.argv[2] === 'build') isDev = false

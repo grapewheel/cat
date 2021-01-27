@@ -1,4 +1,4 @@
 node_modules
 dist
-_cache/*.js
-_cache/*.js.map
+_cache
+!_cache/index.html
