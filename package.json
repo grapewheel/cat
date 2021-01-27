@@ -1,0 +1,19 @@
+{
+  "name": "cat",
+  "version": "0.0.1",
+  "description": "A cross platform UI engine",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./cli/dev"
+  },
+  "author": "Marlon <124711483@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nano-css": "^5.3.1",
+    "nervjs": "^1.5.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "esbuild": "^0.8.34"
+  }
+}
