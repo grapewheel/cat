@@ -1,5 +1,4 @@
-import Nerv from "nervjs";
-import { Button } from "@alifd/next";
+import Button from "@alifd/next/es/button";
 import { Text } from "./framework";
 
 export default class extends Nerv.Component {
@@ -15,7 +14,7 @@ export default class extends Nerv.Component {
     return (
       <div style={this.#Text}>
         <Text onClick={this.#onClick}>Hello World, {this.props.name}</Text>
-        <Button>GO</Button>
+        <Button type="primary">GO</Button>
       </div>
     );
   }

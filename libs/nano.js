@@ -1,8 +1,14 @@
-import { preset } from 'nano-css/preset/vdom'
+import { create } from 'nano-css'
 import { createElement } from 'nervjs'
+import { addon as addonCache } from 'nano-css/addon/cache'
+import { addon as addonRule } from 'nano-css/addon/rule'
+import { addon as addonJsx } from 'nano-css/addon/jsx'
 
-const { rule, sheet, jsx } = preset({ h: createElement })
+const nano = create({ h: createElement })
 
-export const $rule = rule
-export const $sheet = sheet
-export const $jsx = jsx
+addonCache(nano)
+addonRule(nano)
+addonJsx(nano)
+
+const { jsx } = nano
+export { jsx }
